@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Event Browser Application
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+Your task is to build a simple event browsing application using Next.js (version 14 and above) and SQLite. The application will allow users to browse events and interact with them through a "like" feature. This is a front-to-back project, encompassing both the frontend interface and the backend server and database.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Technology Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js (version 14 and above)
+- **Backend**: Next.js API Routes
+- **Database**: SQLite
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Features
 
-## Learn More
+1. **User Interaction**:
+   - Users can browse through a list of events.
+   - Each event should have a title, a description, and an image.
+   - Users can view detailed information about each event in a separate view.
+   - Users can "like" events. Liked events should be trackable per user.
+   - Users can login with just a username to start a session. Note: There is no signup process; users are predefined.
+   - User sessions should persist between browser refreshes and reopening.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Backend**:
+   - Implement the necessary API routes to support fetching events, liking/unliking events, handling user sessions, and persisting user sessions across browser sessions.
+   - You may use any ORM of your choice or write raw SQL queries to interact with the SQLite database. Using an ORM might speed up development, but it is not required.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Database**:
+   - You will need to design the database schema to store events, users, and the relationships between users and events (e.g., likes).
+   - Populate your database with a set of sample events and users for testing.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Page Structure
 
-## Deploy on Vercel
+- **Main Page**: Lists all events.
+- **Event Detail Page**: Shows detailed information about each event.
+- **User Likes Page**: Optional, shows a list of events that a user has liked.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Additional Guidelines
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Server Components**: If you are familiar with React Server Components, you are encouraged to use them in this project, though this is not mandatory.
+- **Design**: The application should be responsive and user-friendly. Design is up to you, but it should be clean and functional.
+- **Documentation**: Document your code appropriately, focusing on maintainability and ease of understanding.
+
+## Setup Instructions
+
+1. Clone this repository.
+2. Create a new private repository on your GitHub account.
+3. Push the code to your private repository.
+4. Give access to [your-github-username] to review the code by adding them as a collaborator.
+
+## Evaluation Criteria
+
+- **Functionality**: All specified features should work correctly.
+- **Code Quality**: Code should be clean, well-organized, and well-documented.
+- **Database Design**: Efficient use of database schema to handle data and relationships.
+- **User Experience**: The application should be intuitive to use and visually appealing.
+
+## Submission
+
+Please submit your complete project by providing access to your private GitHub repository. Include all source code files, the database file, and any additional documentation or resources used or created. Ensure your project is easily setup and runnable in a development environment.
